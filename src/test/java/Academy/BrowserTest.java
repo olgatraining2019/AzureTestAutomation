@@ -14,9 +14,9 @@ import io.github.bonigarcia.wdm.WebDriverManager;
  *   io.github.bonigarcia:webdrivermanager (test scope)
  * Without that dependency + this code, CI uses whatever chromedriver is on the agent (often v86) → fails vs Chrome 145.
  */
+@Ignore("Skip until CI has ChromeDriver")
 public class BrowserTest {
 
-	@Disabled("No browser on CI")
 	@Test
 	public void getData() {
 		System.out.println("Hello Guys");
