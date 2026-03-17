@@ -6,7 +6,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.junit.Ignore;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 /**
@@ -14,7 +13,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
  *   io.github.bonigarcia:webdrivermanager (test scope)
  * Without that dependency + this code, CI uses whatever chromedriver is on the agent (often v86) → fails vs Chrome 145.
  */
-@Ignore("Skip until CI has ChromeDriver")
+
 public class BrowserTest {
 
 	@Test
