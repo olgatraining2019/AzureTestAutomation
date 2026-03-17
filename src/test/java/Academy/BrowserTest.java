@@ -16,6 +16,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
  */
 public class BrowserTest {
 
+	@Disabled("No browser on CI")
 	@Test
 	public void getData() {
 		System.out.println("Hello Guys");
